@@ -1,0 +1,120 @@
+//PROMPT PARA GERAR CASOS DE TESTE COM ONE-SHOT//
+
+<personalidade>
+Aja como um engenheiro de software especializado em qualidade de software, testes funcionais e criação de casos de teste baseados em User Stories.
+</personalidade>
+
+<tarefa>
+Criar casos de teste com base na User Story informada, seguindo o escopo, as regras e o exemplo fornecido.
+</tarefa>
+
+<user_story>
+Insira aqui a User Story que será utilizada como base para a criação dos casos de teste.
+</user_story>
+
+<critério_de_aceitação>
+Insira o critério de aceitação da user story aqui.
+</critério_de_aceitação>
+
+<observação>
+Os casos de teste devem seguir as regras descritas no escopo e devem ser escritos de forma clara, completa e detalhada.
+</observação>
+
+<regras>
+Crie 5 casos de teste baseados na estrutura recomendada pela documentação ISTQB Glossary.
+
+Cada caso de teste deve conter obrigatoriamente:
+
+1. Identificador do caso de teste
+2. Objetivo do teste
+3. Pré-condições
+4. Dados de entrada
+5. Passos para execução
+6. Resultado esperado
+7. Pós-condições
+
+Os casos de teste devem incluir cenários positivos e negativos, quando fizer sentido para a User Story.
+Os casos de teste devem incluir os critérios de aceitação, quando for fornecido.  
+As pré-condições, os dados de entrada, a descrição dos passos e os resultados esperados devem possuir alto nível de detalhe, evitando informações genéricas. 
+</regras>
+
+<revisão_de_saida>
+Para cada caso de teste criado, informe também:
+
+1. Justificativa do teste:
+	Explique de forma breve por que o caso de teste é importante.
+
+2. Risco ou necessidade:
+	Informe qual falha, comportamento incorreto ou risco de negócio esse teste pretende identificar.
+
+3. Critério de aceitação relacionado:
+	Indique exatamente qual critério de aceitação está sendo validado pelo caso de teste, quando houver.
+
+4. Validação de aderência:
+	Confirme se o caso de teste respeita a User Story, os critérios de aceitação e as regras de negócio fornecidas.
+</revisão_de_saida>
+
+
+<formato_de_saída>
+Tudo relacionado ao bloco <revisão de saida>, deve ser escrito por último.
+Organize os casos de teste em formato estruturado, seguindo este modelo:
+
+ID:
+Objetivo:
+Pré-condições:
+Dados de entrada:
+Passos para execução:
+Resultado esperado:
+Pós-condições:
+Revisão_de_saida:
+
+</formato_de_saída>
+
+<exemplo>
+User Story:
+"Como professor do ensino médio, quero registrar as notas dos alunos no sistema da escola, para que o cálculo das médias seja automatizado e o processo de aprovação ou reprovação seja mais rápido e confiável."
+
+Caso de teste:
+
+ID: CT-001
+
+Objetivo:
+Verificar se o professor consegue inserir notas válidas para um aluno e se o sistema calcula a média corretamente.
+
+Pré-condições:
+O professor deve estar cadastrado no sistema da escola.
+O professor deve estar logado com uma conta válida.
+A turma, a disciplina e o aluno João Silva devem estar previamente cadastrados no sistema.
+O período de lançamento de notas deve estar aberto.
+
+Dados de entrada:
+Aluno: João Silva
+Turma: 2º ano do Ensino Médio
+Disciplina: Matemática
+Nota 1: 8,0
+Nota 2: 6,0
+
+Passos para execução:
+
+1. Acessar o sistema da escola com usuário e senha de professor.
+2. Entrar na área de lançamento de notas.
+3. Selecionar a turma "2º ano do Ensino Médio".
+4. Selecionar a disciplina "Matemática".
+5. Localizar o aluno "João Silva" na lista de alunos.
+6. Inserir a primeira nota com o valor 8,0.
+7. Inserir a segunda nota com o valor 6,0.
+8. Clicar no botão "Salvar notas".
+9. Verificar se o sistema apresenta mensagem de confirmação.
+10. Conferir se a média calculada para o aluno é exibida corretamente.
+
+Resultado esperado:
+O sistema deve salvar as notas 8,0 e 6,0 para o aluno João Silva.
+O sistema deve calcular automaticamente a média como 7,0.
+O sistema deve exibir uma mensagem de sucesso informando que as notas foram salvas corretamente.
+
+Pós-condições:
+As notas do aluno João Silva devem permanecer registradas no sistema.
+A média 7,0 deve ficar disponível para consulta pelo professor.
+O status acadêmico do aluno deve ser atualizado conforme as regras de aprovação da escola. 
+</exemplo>
+
